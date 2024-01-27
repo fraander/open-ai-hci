@@ -16,8 +16,8 @@ let query = ChatQuery(model: .gpt3_5Turbo, messages: [.init(role: .user, content
 var result = "" // prepare to accumulate the result
 for try await response in openAI.chatsStream(query: query) {
     if let r = response.choices.first?.delta.content {
-        result += r
+        result += r // add to the accumulator `result`
     }
 }
 
-print("RESULT: \(result)")
+print("RESULT: \(result)") // print the final value
