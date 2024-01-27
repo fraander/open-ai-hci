@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BDCFC6382B645E6300B45FD6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFC6372B645E6300B45FD6 /* main.swift */; };
+		BDCFC6402B645EA500B45FD6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = BDCFC63F2B645EA500B45FD6 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCFC6402B645EA500B45FD6 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = "open-ai-hci";
+			packageProductDependencies = (
+				BDCFC63F2B645EA500B45FD6 /* OpenAI */,
+			);
 			productName = "open-ai-hci";
 			productReference = BDCFC6342B645E6300B45FD6 /* open-ai-hci */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = BDCFC62B2B645E6300B45FD6;
+			packageReferences = (
+				BDCFC63E2B645EA500B45FD6 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = BDCFC6352B645E6300B45FD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +297,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDCFC63E2B645EA500B45FD6 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDCFC63F2B645EA500B45FD6 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDCFC63E2B645EA500B45FD6 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDCFC62C2B645E6300B45FD6 /* Project object */;
 }
