@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDB770C32B6561E10061FF57 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB770C22B6561E10061FF57 /* OpenAIService.swift */; };
 		BDCFC6382B645E6300B45FD6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFC6372B645E6300B45FD6 /* main.swift */; };
 		BDCFC6402B645EA500B45FD6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = BDCFC63F2B645EA500B45FD6 /* OpenAI */; };
+		BDCFC6822B65606700B45FD6 /* open_ai_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFC6812B65606700B45FD6 /* open_ai_iosApp.swift */; };
+		BDCFC6842B65606700B45FD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFC6832B65606700B45FD6 /* ContentView.swift */; };
+		BDCFC6862B65606A00B45FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCFC6852B65606A00B45FD6 /* Assets.xcassets */; };
+		BDCFC6892B65606A00B45FD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCFC6882B65606A00B45FD6 /* Preview Assets.xcassets */; };
+		BDCFC68E2B6560EA00B45FD6 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = BDCFC68D2B6560EA00B45FD6 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BDB770C22B6561E10061FF57 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		BDCFC6342B645E6300B45FD6 /* open-ai-hci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "open-ai-hci"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCFC6372B645E6300B45FD6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BDCFC67F2B65606700B45FD6 /* open-ai-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "open-ai-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCFC6812B65606700B45FD6 /* open_ai_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = open_ai_iosApp.swift; sourceTree = "<group>"; };
+		BDCFC6832B65606700B45FD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDCFC6852B65606A00B45FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDCFC6882B65606A00B45FD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDCFC67C2B65606700B45FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCFC68E2B6560EA00B45FD6 /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				BDCFC6362B645E6300B45FD6 /* open-ai-hci */,
+				BDCFC6802B65606700B45FD6 /* open-ai-ios */,
 				BDCFC6352B645E6300B45FD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				BDCFC6342B645E6300B45FD6 /* open-ai-hci */,
+				BDCFC67F2B65606700B45FD6 /* open-ai-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +84,26 @@
 				BDCFC6372B645E6300B45FD6 /* main.swift */,
 			);
 			path = "open-ai-hci";
+			sourceTree = "<group>";
+		};
+		BDCFC6802B65606700B45FD6 /* open-ai-ios */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFC6812B65606700B45FD6 /* open_ai_iosApp.swift */,
+				BDB770C22B6561E10061FF57 /* OpenAIService.swift */,
+				BDCFC6832B65606700B45FD6 /* ContentView.swift */,
+				BDCFC6852B65606A00B45FD6 /* Assets.xcassets */,
+				BDCFC6872B65606A00B45FD6 /* Preview Content */,
+			);
+			path = "open-ai-ios";
+			sourceTree = "<group>";
+		};
+		BDCFC6872B65606A00B45FD6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFC6882B65606A00B45FD6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +129,26 @@
 			productReference = BDCFC6342B645E6300B45FD6 /* open-ai-hci */;
 			productType = "com.apple.product-type.tool";
 		};
+		BDCFC67E2B65606700B45FD6 /* open-ai-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDCFC68C2B65606A00B45FD6 /* Build configuration list for PBXNativeTarget "open-ai-ios" */;
+			buildPhases = (
+				BDCFC67B2B65606700B45FD6 /* Sources */,
+				BDCFC67C2B65606700B45FD6 /* Frameworks */,
+				BDCFC67D2B65606700B45FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "open-ai-ios";
+			packageProductDependencies = (
+				BDCFC68D2B6560EA00B45FD6 /* OpenAI */,
+			);
+			productName = "open-ai-ios";
+			productReference = BDCFC67F2B65606700B45FD6 /* open-ai-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +160,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					BDCFC6332B645E6300B45FD6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					BDCFC67E2B65606700B45FD6 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -119,9 +184,22 @@
 			projectRoot = "";
 			targets = (
 				BDCFC6332B645E6300B45FD6 /* open-ai-hci */,
+				BDCFC67E2B65606700B45FD6 /* open-ai-ios */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDCFC67D2B65606700B45FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCFC6892B65606A00B45FD6 /* Preview Assets.xcassets in Resources */,
+				BDCFC6862B65606A00B45FD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDCFC6302B645E6300B45FD6 /* Sources */ = {
@@ -129,6 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCFC6382B645E6300B45FD6 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDCFC67B2B65606700B45FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB770C32B6561E10061FF57 /* OpenAIService.swift in Sources */,
+				BDCFC6842B65606700B45FD6 /* ContentView.swift in Sources */,
+				BDCFC6822B65606700B45FD6 /* open_ai_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +363,81 @@
 			};
 			name = Release;
 		};
+		BDCFC68A2B65606A00B45FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"open-ai-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 6ZT823VK2T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HCI;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frank.open-ai-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BDCFC68B2B65606A00B45FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"open-ai-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 6ZT823VK2T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HCI;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frank.open-ai-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -296,6 +459,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BDCFC68C2B65606A00B45FD6 /* Build configuration list for PBXNativeTarget "open-ai-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDCFC68A2B65606A00B45FD6 /* Debug */,
+				BDCFC68B2B65606A00B45FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -311,6 +483,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		BDCFC63F2B645EA500B45FD6 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDCFC63E2B645EA500B45FD6 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		BDCFC68D2B6560EA00B45FD6 /* OpenAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BDCFC63E2B645EA500B45FD6 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
