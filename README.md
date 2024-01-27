@@ -1,6 +1,6 @@
 # Project Preview
 Because I want to avoid additional charges to my OpenAI account, and because this project can only be run on a Mac and I want to make sure any TA can grade my work, I included this preview of my code in action.
-[Link to video](https://github.com/fraander/open-ai-hci/assets/57777918/9e378ebe-74e4-47ff-b8ae-db35c8a69fbe
+[Video download link](https://github.com/fraander/open-ai-hci/assets/57777918/9e378ebe-74e4-47ff-b8ae-db35c8a69fbe
 )
 
 
