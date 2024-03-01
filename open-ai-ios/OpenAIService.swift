@@ -11,7 +11,7 @@ import OpenAI
 
 // Hold onto the different API functions and the configuration
 class OpenAIService: ObservableObject {
-    let openAI = OpenAI(configuration: .init(token: "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")) // setup the OpenAI object to handle API usage, using my API token to configure
+    let openAI = OpenAI(configuration: .init(token: "KEY")) // setup the OpenAI object to handle API usage, using my API token to configure
 
     // Query the API to give a new version of hello world. This function is asynchronous and can throw an error
     func spinHelloWorld() async throws -> String {
